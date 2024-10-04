@@ -1,0 +1,127 @@
+:root {
+    --color1: blue;
+    --color2: purple;
+    --bg-color: darkred;
+    --text-color: black;
+    --font-size-large: 2rem;
+    --font-size-medium: 1.5rem;
+    --font-size-small: 1rem;
+    --padding: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding-top: 80px; /* for fixed header */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color1);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: var(--font-size-large);
+    margin: 0;
+}
+
+.footer {
+    background-color: var(--color1);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.intro {
+    text-align: center;
+    padding: var(--padding);
+}
+
+.intro h2 {
+    font-size: var(--font-size-medium);
+}
+
+.intro p {
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+.flexbox-section {
+    background-color: var(--bg-color);
+    padding: var(--padding);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-item {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: var(--padding);
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+}
+
+.flex-item h3 {
+    font-size: var(--font-size-medium);
+    margin-bottom: 10px;
+}
+
+.flex-item p {
+    font-size: var(--font-size-small);
+}
+
+.grid-section {
+    padding: var(--padding);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: var(--color1);
+    color: white;
+    padding: var(--padding);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.positioning-section {
+    padding: var(--padding);
+}
+
+.relative-container {
+    position: relative;
+    background-color: var(--color2);
+    color: white;
+    padding: var(--padding);
+    border-radius: 8px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 8px;
+}
