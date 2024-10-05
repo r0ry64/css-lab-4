@@ -14,7 +14,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    padding-top: 80px; /* for fixed header */
+    padding-top: 80px;
 }
 
 .header {
